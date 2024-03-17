@@ -64,7 +64,7 @@ const Login = () => {
                                                 <p>{error}</p> :
                                                 null
                                         }
-                                        <div className="form-outline mb-4" data-mdb-input-init>
+                                        <div className="form-outline mb-4 mt-5" data-mdb-input-init>
                                             <label>Email:</label>
                                             <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
                                         </div>
@@ -82,26 +82,17 @@ const Login = () => {
                                             <p className="text-danger">Password is required</p>:
                                             null
                                         }
-                                        <button type="submit">Login</button>
+
+                                        <button type="submit" className="mt-5">Login</button>
+
+                                        <div className="d-flex mt-5">
+                                            <p>Already have an account? Please,</p>
+                                            <Link to="/register">Signup</Link>
+                                        </div>
                                 </form>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            
-            
-            
-            
-
-                
-
-            <div className="d-flex">
-                <div>
-                    <p>If you don't have an account, please</p>
-                </div>
-                <div>
-                    <Link to="/register" className="navbar-btn">Signup</Link>
                 </div>
             </div>
         </div>

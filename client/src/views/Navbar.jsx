@@ -26,7 +26,7 @@ const Navbar = () => {
   return (
     <nav className="navbar navbar-dark bg-dark rounded">
       <div className="navbar-left">
-        <Link to="/books" className="navbar-brand">BookClub</Link>
+        <Link to="/books" className="navbar-brand mx-2">BookClub</Link>
       </div>
       <div className="navbar-right">
         {token ? (
@@ -39,8 +39,8 @@ const Navbar = () => {
           </>
         ) : (
           <>
-            <Link to="/login" className="navbar-btn">Login</Link>
-            <Link to="/signup" className="navbar-btn">Signup</Link>
+            <Link to="/login" className="navbar-btn mx-2 text-white">Login</Link>
+            <Link to="/register" className="navbar-btn mx-2 text-white">Signup</Link>
           </>
         )}
       </div>
