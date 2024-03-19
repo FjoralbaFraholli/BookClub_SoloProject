@@ -56,7 +56,7 @@ yarn start
  
 
 USAGE
-- Once the development server is running, you can access the BookClub application by opening your web browser and navigating to http://localhost:3000. From there, you can register for an account, login, and start managing your book collection.
+- Once the development server is running, you can access the BookClub application by opening your web browser and navigating to http://localhost:5173. From there, you can register for an account, login, and start managing your book collection.
 
 CONTRIBUTING
 - Contributions to the BookClub project are welcome and encouraged! If you'd like to contribute, please fork the repository, make your changes, and submit a pull request.
