@@ -1,16 +1,4 @@
 const Book = require('../models/books.model');
- 
-// module.exports.getAllBooks = (req, res) => {
-//     Book.find().sort({createdAt: 1})
-//         .then((allBooks) => {
-//             res.json({ books: allBooks })
-//         })
-//         .catch((err) => {
-//             console.log(err);
-//             res.json({ message: 'Something went wrong', error: err })
-//         });
-// }
-
 
 module.exports.getAllBooks = async (req, res) => {
     try {
@@ -24,7 +12,6 @@ module.exports.getAllBooks = async (req, res) => {
     }
 };
 
- 
 module.exports.getOneBook = (req, res) => {
     Book.findOne({ _id: req.params.id })
         .then(oneBook => {
